@@ -10,20 +10,20 @@ namespace BigMamaLib
 
         // aggregering
         private List<Kunde> _medlemmer;
-        private List<Kunde> _gæsteBrugere;
+        
         // konstruktører
 
 
         public Klub()
         {
             _medlemmer = new List<Kunde>();
-            _gæsteBrugere = new List<Kunde>();
+           
         }
 
-        public Klub(List<Kunde> medlemmer, List<Kunde> gæsteBrugere)
+        public Klub(List<Kunde> medlemmer)
         {
             _medlemmer = medlemmer;
-            _gæsteBrugere = gæsteBrugere;
+            
         }
 
         public List<Kunde> Medlemmer
@@ -31,11 +31,7 @@ namespace BigMamaLib
             get { return _medlemmer; }
             set { _medlemmer = value; }
         }
-        public List<Kunde> GæsteBrugere
-        {
-            get { return _gæsteBrugere; }
-            set { _gæsteBrugere= value; }
-        }
+       
 
         public override string ToString()
         {
